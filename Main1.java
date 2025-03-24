@@ -26,13 +26,16 @@ public class Main1 {
         //create object using loop
         Main1 p; // declare a dummy object, object has null value
         // System.out.println(p.getAge());
+
+        Main1[] persons = new Main1[5];
         for(int i=0; i<5; i++)
         {
-            p = new Main1("name " + i,20+i);
+            persons[i] = new Main1("name " + i,20+i);
             
             System.out.println("p" +i+ " "+p.getCount());
         }
         System.out.println(Main1.getCount());
+        System.out.println("p"+0+ " "+ persons[0].getAge());
     }
 
 }
